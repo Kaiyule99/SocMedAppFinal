@@ -1,12 +1,12 @@
+// src/components/layout.js
 import React from 'react';
 import Sidebar from './sidebar';
-import '../styles/app.scss';
 
 const Layout = ({ children }) => {
   return (
-    <div className="app">
+    <div className="layout">
       <Sidebar />
-      <main className="feed">{children}</main>
+      <main>{children}</main>
     </div>
   );
 };

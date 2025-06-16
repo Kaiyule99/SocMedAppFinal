@@ -18,8 +18,10 @@ const Home = () => {
 
   return (
     <Layout>
-      <TweetInput onPost={handlePost} />
-      <TweetList tweets={tweets} />
+      <div className="main-feed">
+        <TweetInput onPost={handlePost} />
+        <TweetList tweets={tweets} />
+      </div>
     </Layout>
   );
 };

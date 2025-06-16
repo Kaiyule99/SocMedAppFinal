@@ -4,7 +4,12 @@ import { Link } from 'react-router-dom';
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <h2>MyApp</h2>
+      <div className="logo">
+        <img src="/logo.jpg" alt="Cardinal Logo" />
+      </div>
+
+      <h2>Chirp</h2>
+
       <nav>
         <Link to="/">Home</Link>
         <Link to="/profile">Profile</Link>

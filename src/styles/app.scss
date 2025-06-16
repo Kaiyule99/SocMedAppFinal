@@ -1,9 +1,15 @@
 @import './_components.scss';
 
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: Arial, sans-serif;
   background: #f5f8fa;
+  color: #14171a;
 }
 
 .app {
@@ -11,16 +17,80 @@ body {
   min-height: 100vh;
 }
 
+// ─── Sidebar ─────────────────────────────────────
 .sidebar {
-  width: 200px;
-  padding: 1rem;
-  background: #ffffff;
-  border-right: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 250px;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-right: 1px solid #e6ecf0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 1000; // Ensures it stays on top
+
+  .logo {
+    margin-bottom: 1rem;
+
+    img {
+      max-width: 100px;
+      height: auto;
+      border-radius: 6px;
+    }
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #d62828; // Red like your logo
+    margin-bottom: 2rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      text-decoration: none;
+      color: #14171a;
+      padding: 10px 0;
+      font-size: 1.1rem;
+      font-weight: 500;
+
+      &:hover {
+        color: #1da1f2;
+      }
+    }
+  }
 }
 
-.feed {
+// ─── Main Layout ────────────────────────────────
+.layout {
+  display: flex;
+  min-height: 100vh;
+   padding-left: 250px;
+}
+
+main {
   flex: 1;
-  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+  overflow-x: hidden;
+}
+
+// ─── Feed ───────────────────────────────────────
+.main-feed {
+  width: 100%;
   max-width: 600px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
