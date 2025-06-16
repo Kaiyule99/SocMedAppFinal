@@ -1,4 +1,4 @@
-// src/components/layout.js
+
 import React from 'react';
 import Sidebar from './sidebar';
 

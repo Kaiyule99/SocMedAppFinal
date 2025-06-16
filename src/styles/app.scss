@@ -17,7 +17,7 @@ body {
   min-height: 100vh;
 }
 
-// ─── Sidebar ─────────────────────────────────────
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -30,7 +30,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  z-index: 1000; // Ensures it stays on top
+  z-index: 1000; 
 
   .logo {
     margin-bottom: 1rem;
@@ -45,7 +45,7 @@ body {
   h2 {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #d62828; // Red like your logo
+    color: #d62828; 
     margin-bottom: 2rem;
   }
 
@@ -67,7 +67,7 @@ body {
   }
 }
 
-// ─── Main Layout ────────────────────────────────
+
 .layout {
   display: flex;
   min-height: 100vh;
@@ -82,7 +82,7 @@ main {
   overflow-x: hidden;
 }
 
-// ─── Feed ───────────────────────────────────────
+
 .main-feed {
   width: 100%;
   max-width: 600px;
