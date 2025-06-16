@@ -18,7 +18,7 @@ const TweetInput = ({ onPost }) => {
         placeholder="What's happening?"
          style={{ resize: 'none' }}
       />
-      <button onClick={handlePost}>Tweet</button>
+      <button onClick={handlePost}>Chirp!</button>
     </div>
   );
 };
