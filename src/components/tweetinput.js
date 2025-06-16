@@ -16,6 +16,7 @@ const TweetInput = ({ onPost }) => {
         value={text}
         onChange={(e) => setText(e.target.value)}
         placeholder="What's happening?"
+         style={{ resize: 'none' }}
       />
       <button onClick={handlePost}>Tweet</button>
     </div>
