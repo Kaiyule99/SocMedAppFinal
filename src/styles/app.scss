@@ -1,0 +1,26 @@
+@import './_components.scss';
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f8fa;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  padding: 1rem;
+  background: #ffffff;
+  border-right: 1px solid #ddd;
+}
+
+.feed {
+  flex: 1;
+  padding: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
